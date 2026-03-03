@@ -105,6 +105,21 @@
     </div>
   </section>
 
+  <section class="flex justify-center m-10">
+    <div class="join">
+      <div>
+        <label class="input validator join-item">
+          <input id="input-search" type="text" placeholder="Search Vocabulary" required />
+        </label>
+      </div>
+      <button id="btn-search" class="btn btn-primary join-item">Search</button>
+    </div>
+  </section>
+
+  <section id="spinner" class="flex justify-center items-center py-10 hidden">
+    <span class="loading loading-bars loading-xl"></span>
+  </section>
+
   <section id="word-container" class="bg-gray-100 p-10 max-w-7xl mx-auto my-10 grid grid-cols-3 gap-5">
 
     <div class="text-center col-span-full rounded-xl py-10 space-y-6 font-bangla">
@@ -119,7 +134,7 @@
   <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
     <div class="modal-box">
       <div id="details-container" class="space-y-5">
-        
+
       </div>
       <div class="modal-action">
         <form method="dialog">
